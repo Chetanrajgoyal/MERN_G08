@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2 {
+        color: red;
+    }
+
+    button {
+        width: 200px;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: rgb(62, 62, 62);
+        color: white;
+        transition: 0.2s;
+        border: none;
+    }
+</style>
+
+<body>
+    <h1>hello world</h1>
+    <h2>Welcome to my webpage</h2>
+    <button id="sub">Exit</button>
+
+</body>
+
+</html>
+<script>
+    console.log("hello world");
+    var btn = document.getElementById("sub");
+    btn.addEventListener("click", eventButton);
+    var flag = false;
+    function eventButton() {
+        flag = !flag;
+        if (flag) {
+            var h2 = document.querySelector("h2");
+            h2.innerText = "Thanks for visiting!";
+            btn.innerText = "welcome!";
+        }
+        else{
+            var h2 = document.querySelector("h2");
+            h2.innerText = "Welcome to my webpage";
+            btn.innerText = "Exit";
+        }
+
+    }
+</script>
