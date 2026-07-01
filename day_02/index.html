@@ -1,5 +1,6 @@
+<!-- DOM =  Object model  -->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
     h2 {
         color: red;
     }
-
+    
     button {
         width: 200px;
         padding: 20px;
@@ -43,11 +44,18 @@
             var h2 = document.querySelector("h2");
             h2.innerText = "Thanks for visiting!";
             btn.innerText = "welcome!";
+            h2.style.color = "green";
+            btn.style.backgroundColor = "green";
+            btn.style.color = "white";
+            
         }
         else{
             var h2 = document.querySelector("h2");
             h2.innerText = "Welcome to my webpage";
             btn.innerText = "Exit";
+            h2.style.color = "red";
+            btn.style.backgroundColor = "";
+            btn.style.color = "";
         }
 
     }
